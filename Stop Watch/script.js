@@ -3,7 +3,7 @@ let interval = null;
 const time = document.getElementById("time")
 
 function padStart(value) {
-    return String(value).padStart(2, "0");
+    return String(value).padStart(2, "0"); //Pad a string with "0" until it reaches the length 2:
 }
 
 function setTime() {
@@ -18,7 +18,7 @@ function timer() {
 }
 
 function startClock() {
-    if(interval) resetClock()
+    if(interval) stopClock()
     interval = setInterval(timer, 1000)
 }
 
