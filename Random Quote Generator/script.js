@@ -11,7 +11,7 @@ const quotes = [
     "If you want to live a happy life, tie it to a goal, not to people or things." 
 ]
 
-const usedIndexes = new Set()
+const usedIndexes = new Set() //Creates a new Set class
 const quoteElement = document.getElementById("quote")
 
 function generateQuote() {
