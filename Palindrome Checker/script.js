@@ -1,7 +1,7 @@
 const input = document.getElementById("input")
 
 function reverseString(str) {
-    return str.split("").reverse().join("")
+    return str.split("").reverse().join("") //The split() method divides the string into an array of characters, reverse() reverses the array, and join() combines the reversed characters into a new string, effectively reversing the original string.
 }
 
 function check() {
