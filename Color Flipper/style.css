@@ -9,3 +9,22 @@
 #red {
     background-color: red;
 }
+
+#random {
+    padding: 10px;
+}
+
+#green, #blue, #red {
+    padding: 10px;
+    color: white;
+}
+
+h3 {
+    font-size: 30px;
+}
+
+button {
+    border-radius: 10px;
+    width: 100px;
+    height: 50px;
+}
