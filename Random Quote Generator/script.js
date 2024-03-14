@@ -17,15 +17,15 @@ const quoteElement = document.getElementById("quote")
 function generateQuote() {
     if(usedIndexes.size >= quotes.length){
         usedIndexes.clear()
-    }
+    } // it checks that if we have used all of the indexes inside the array quotes, we clear all the values inside the Set(). Otherwise we are gonna have an infinite loop because we already used all of the indexes.
 
     while(true) {
         const randomIdx = Math.floor(Math.random() * quotes.length)
-        if(usedIndexes.has(randomIdx)) continue
+        if(usedIndexes.has(randomIdx)) continue  //if usedIndexes has the index of randomIdx which means we have already used this index; We restart the while loop again. If it is not the case, the code continious the check the code below.
 
         const quote = quotes[randomIdx]
         quoteElement.innerHTML = quote;
-        usedIndexes.add(randomIdx)
-        break
+        usedIndexes.add(randomIdx) //Add this randomIdx to usedIndexes array so we do not use it again.
+        break  // Should use break to not have a infinite loop.
     }   
 }
